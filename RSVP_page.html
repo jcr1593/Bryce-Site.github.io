@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSVP Site</title>
+
+    <!--Always include these meta tagds-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col col-sm-6 col-md-6 col-lg-5" >
+          <h2>
+            General Information
+          </h2>
+          <form method="GET">
+            Family Name <br>(Family's Last Name): <input type="text" name="firstname" required><br>
+            Email: <input type="email" name="email" required><br>
+            How many kids?   <input type="number" id="kids" name="kids" min="0" max="10" required><br>
+            How many adults? <input type="number" id="adults" name="adults" min="0" max="10" required><br><br>
+            <h2>
+              Food & Fun
+            </h2>
+            <div id="subtitle">
+              Please select which food allergies apply to you or your children
+            </div><br>
+            <input type="checkbox"> Tree Nuts Allergy<br>
+            <input type="checkbox"> Peanuts Allergy<br>
+            <input type="checkbox"> Shellfish Allergy<br>
+            <input type="checkbox"> Soy Allergy<br>
+            <input type="checkbox"> Wheat Allergy<br>
+            <input type="checkbox"> Milk and Other Dairy Products<br><br>
+            Other Allergies Not Listed Above<input type="text" name="other"><br><br>
+            <div id="subtitle">
+              Favorite game listed below
+            </div><br>
+            <select>
+              <option value="donkey" name="donkey">Pin the tail on the donkey</option>
+              <option value="hideandseek" name="hideandseek">Hide and Seek</option>
+              <option value="boardgames" name="boardgames">Board Games</option>
+            </select><br><br>
+            <input type="submit" value="Complete Invitation RSVP">
+            <input type="reset" value="reset">
+          </form>
+        </div>
+        <div class="col2 col-sm-6 col-md-6 col-lg-7" >
+          <a href="index.html" class="btn btn-light" role="button">Back to Home</a>
+        </div>
+      </div>
+    </div>
+<!--
+    <script>
+      function myFunction() {
+        alert("The form was submitted");
+      }
+    </script>-->
+  </body>
+</html>
